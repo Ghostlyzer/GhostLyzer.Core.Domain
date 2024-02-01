@@ -4,6 +4,24 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>GhostLyzer Core Domain</Title>
+    <Company>GhostLyzer</Company>
+    <Description>The domain in GhostLyzer</Description>
+    <Copyright>GhostLyzer</Copyright>
+    <PackageProjectUrl>https://ghostlyzer.com</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Ghostlyzer/GhostLyzer.Core.Domain</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>ghost;ghostlyzer</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

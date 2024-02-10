@@ -5,7 +5,6 @@ using Microsoft.Extensions.Logging;
 
 namespace GhostLyzer.Core.Domain
 {
-
     /// <summary>
     /// Represents a publisher that sends domain and integration events to a bus.
     /// </summary>
@@ -34,7 +33,6 @@ namespace GhostLyzer.Core.Domain
             _capPublisher = capPublisher;
             _serviceScopeFactory = serviceScopeFactory;
         }
-
 
         /// <summary>
         /// Sends a domain event asynchronously to the bus.

@@ -6,17 +6,34 @@
     <Nullable>enable</Nullable>
     <Title>GhostLyzer Core Domain</Title>
     <Company>GhostLyzer</Company>
-    <Description>The domain in GhostLyzer</Description>
+    <Description>The core domain in GhostLyzer providing base entities, events, and publishing og integration events.</Description>
     <Copyright>GhostLyzer</Copyright>
-    <PackageProjectUrl>https://ghostlyzer.com</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Ghostlyzer/GhostLyzer.Core.Domain</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/Ghostlyzer/GhostLyzer.Core.Domain</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>ghost;ghostlyzer</PackageTags>
+    <PackageTags>GhostLyzer</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
+    <Authors>Christian Schou</Authors>
+    <PackageIcon>ghostlyzer-logo.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="DotNetCore.CAP" Version="8.0.1" />
+    <PackageReference Include="MassTransit" Version="8.1.3" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ghostlyzer-logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

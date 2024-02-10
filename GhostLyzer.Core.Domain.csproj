@@ -16,6 +16,7 @@
     <NeutralLanguage>en</NeutralLanguage>
     <Authors>Christian Schou</Authors>
     <PackageIcon>ghostlyzer-logo.png</PackageIcon>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
